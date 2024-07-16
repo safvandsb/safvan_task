@@ -1,0 +1,51 @@
+.sort-dropdown-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .sort-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .select-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .select-wrapper::after {
+    content: "\25BC";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555;
+  }
+  
+  .sort-dropdown {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 200px;
+    padding: 10px 30px 10px 10px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .sort-dropdown:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+  }
+  
+  .sort-dropdown:hover {
+    border-color: #2980b9;
+  }
+  
